@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<body lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+    <title>Breakpoints Bootstrap4</title>
+    <style>
+        .our-nav-bar .dropdown-menu a:hover {
+            color: white !important;
+        }
+        .our-nav-bar .dropdown-menu a{
+            color: darkslategray !important;
+            font-weight: bold !important;
+        }
+        .our-nav-bar .dropdown .dropdown-menu .dropdown-item:hover{
+            background-color: #1c2331 !important;
+            color: white !important;
+        }
+        /* Small devices min-width 576px (landscape phones) */
+        @media (min-width: 576px) {
+            body {
+                background-color: rgb(28,35,49);
+            }
+        }
+        @media (min-width: 786px) {
+            body{
+                background-color: #40c4ff;
+            }
+        }
+        @media (min-width: 1200px) {
+            body{
+                background-color: whitesmoke;
+            }
+        }
+
+        nav{
+            background-color: rgb(28,35,49);
+        }
+        
+        .colour{
+            color: rgb(28,35,49);
+        }
+
+        .text-white{
+            color: white;
+        }
+        .text-darkslate{
+            color: rgb(28,35,49)
+        }
+
+        #pht img{
+            width: 300px;
+            margin-left: 10px;: 
+        }
+        #pht img:hover{
+          transition-duration: 2s;
+          transform: scale(1.2);
+          transition-timing-function: linear;
+        }
+        #box{
+          display: none;
+        }
+
+        #med{
+          display: none;
+        }
+        .navbar .nav-item .nav-link:active{
+          background-color: green;
+        }
+        </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg nav-dark container rounded mt-1 our-nav-bar">
+   <div class="container">
+       <a class="navbar-brand text-white" href="#">MANA</a>
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#simple"><span class="navbar-toggler-icon"></span></button>
+       <div class="collapse navbar-collapse" id="simple">
+           <ul class="navbar-nav">
+               <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+               <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+               <li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">Service</a></li>
+                    <li class="dropdown-item"><a href="#">Service</a></li>
+                    <li class="dropdown-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">service</a></li>
+                    <li class="dropdown-item"><a href="#">service</a></li>
+                    <li class="dropdown-item"><a href="#">service</a></li>
+                    <li class="dropdown-item"><a href="#">service</a></li>
+                </ul></li>
+                    <li class="dropdown-item"><a href="#">service</a></li>
+                </ul>
+               </li>
+               <li class="nav-item"><a href="#" class="nav-link text-white">Careers</a></li>
+           </ul>
+       </div>
+   </div>
+</nav>
+
+<br>
+<hr>
+
+<nav class="navbar navbar-expand-lg nav-dark container rounded mt-1 our-nav-bar">
+   <div class="container">
+       <a class="navbar-brand text-white" href="#">MANA</a>
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#simple"><span class="navbar-toggler-icon"></span></button>
+       <div class="collapse navbar-collapse" id="simple">
+           <ul class="navbar-nav">
+               <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+               <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+               <li class="nav-item dropdown"><a href="#" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">Service</a></li>
+                    <li class="dropdown-item"><a href="#">Service</a></li>
+                    <li class="dropdown-item"><a href="#">Service</a></li>
+                    <li class="dropdown-item"><a href="#">service</a></li>
+                </ul>
+               </li>
+               <li class="nav-item"><a href="#" class="nav-link text-white">Careers</a></li>
+           </ul>
+       </div>
+   </div>
+</nav>
+
+<table class="table mt-3 w-50 ml-3 table-bordered table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>S.NO</th>
+      <th>NAME</th>
+      <th>PLACE</th>
+      <th>CELL NO</th>
+    </tr>
+  </thead>
+  <tbody class="bg-success text-white font-weight">
+    <tr>
+      <td>1</td>
+      <td>Mana raja</td>
+      <td>Proddatur</td>
+      <td>9849325658</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>kiran kumar</td>
+      <td>Rayachoti</td>
+      <td>9849325589</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Vishnu vadla</td>
+      <td>Proddatur</td>
+      <td>900275010</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Lokesh</td>
+      <td>Proddatur</td>
+      <td>9676466822</td>
+    </tr>
+
+  </tbody>
+</table>
+<br>
+<button class="btn btn-info" onclick="check()">click</button>
+<br>
+<div class="alert alert-danger alert-dismissible">
+  <button type="button" class="close"><i class="fa fa-window-close" data-dismiss="alert"></i></button>
+  <strong>you must on</strong> click on the side link <a href="#" class="alert-link">click here</a>
+</div>
+<br>
+<div class="card bg-dark text-white w-50 ml-5" id="box">
+  <div class="card-body">
+    <h4>Application submitted successfully</h4>
+    <button type="button" class="btn btn-warning" style="font-size: 30px"><i class="material-icons text-success font-weight-bold" style="font-size: 30px">done</i> OK</button>
+  </div>
+</div>
+
+
+  <nav>
+    <ul class="pagination pagination-lg justify-content-start">
+      <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+      <li class="page-item active"><a href="#" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" class="page-link">4</a></li>
+
+    </ul>
+  </nav>
+
+  <button class="btn btn-info" data-toggle="modal" data-target="#logInMode">log here</button>
+
+  <div class="modal" role="dialog" id="logInMode">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>login here</h3>
+          <a href="#" class="close" data-dismiss="modal"><i class="fa fa-window-close"></i></a>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username" class="font-weight-bold">USERNAME</label>
+              <input type="text" name="username" class="form-control" placeholder="username">
+            </div>
+            <div class="form-group">
+              <label for="password" class="font-weight-bold">PASWORD</label>
+              <input type="password" name="password" class="form-control" placeholder="password">
+            </div>
+            <div class="form-group">
+              <label for="email" class="font-weight-bold">Email</label>
+              <input type="email" name="Email" class="form-control" placeholder="Emali">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success">Submit</button>
+          <button class="btn btn-danger" data-dismiss="modal" data-target="#logInMode">Cancel</button>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Home">Home</button>
+
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+        Tooltip on left
+    </button>
+
+<br>
+<div class="media">
+  <div class="media-left">
+    <img src="img/image1.jpeg" width="150" height="150">
+  </div>
+  <div class="media-body">
+      <h4 class="media-heading">ManarajaUi</h4>
+      <textarea>comment here</textarea>
+  </div>
+</div>
+
+<a href="#" id="com" onclick="cli()">comment</a>
+
+<div class="media" id="med">
+  <div class="media-left">
+    <img src="img/image1.jpeg" width="150" height="150">
+  </div>
+  <div class="media-body">
+      <h4 class="media-heading">ManarajaUi</h4>
+      <textarea>comment here</textarea>
+      <button class="btn btn-success">submit</button>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  function check(){
+    document.getElementById('box').style.display = 'block';
+  }
+</script>
+<script type="text/javascript">
+  function cli(){
+    document.getElementById('med').style.display ='block';
+  }
+</script>
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>
